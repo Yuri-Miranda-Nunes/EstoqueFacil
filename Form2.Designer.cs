@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastro));
             SuspendLayout();
             // 
             // FrmCadastro
@@ -37,6 +38,7 @@
             BackColor = Color.FromArgb(0, 200, 83);
             ClientSize = new Size(742, 387);
             Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 4, 4, 4);
             Name = "FrmCadastro";
             Text = "Form2";
