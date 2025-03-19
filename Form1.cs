@@ -34,8 +34,9 @@ namespace Leitura_de_solicitação_de_cliente
 
         private void btnConsutar_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            ConsultaEstoque form3 = new ConsultaEstoque();
             form3.Show();
+            this.Hide();
         }
 
         private void btnConfiguracao_Click(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace Leitura_de_solicitação_de_cliente
         {
             FrmCadastro form2 = new FrmCadastro();
             form2.Show();
+            this.Hide();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

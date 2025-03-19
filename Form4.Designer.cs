@@ -1,6 +1,6 @@
 ﻿namespace Leitura_de_solicitação_de_cliente
 {
-    partial class FrmCadastro
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastro));
-            SuspendLayout();
-            // 
-            // FrmCadastro
-            // 
-            AutoScaleDimensions = new SizeF(10F, 18F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 200, 83);
-            ClientSize = new Size(742, 387);
-            Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4);
-            Name = "FrmCadastro";
-            Text = "Form2";
-            Load += FrmCadastro_Load;
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form4";
         }
 
         #endregion

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Leitura_de_solicitação_de_cliente
 {
-    public partial class FrmCadastro : Form
+    public partial class Form4 : Form
     {
-        public FrmCadastro()
+        public Form4()
         {
             InitializeComponent();
-        }
-
-        private void FrmCadastro_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
