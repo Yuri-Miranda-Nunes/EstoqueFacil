@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Leitura_de_solicitação_de_cliente
 {
-    public partial class Form2 : Form
+    public partial class FrmCadastro : Form
     {
-        public Form2()
+        public FrmCadastro()
         {
             InitializeComponent();
         }

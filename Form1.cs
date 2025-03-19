@@ -45,7 +45,7 @@ namespace Leitura_de_solicitação_de_cliente
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            FrmCadastro form2 = new FrmCadastro();
             form2.Show();
         }
 
