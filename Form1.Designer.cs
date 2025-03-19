@@ -72,6 +72,7 @@
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.FromArgb(0, 200, 83);
+            btnAdicionar.Cursor = Cursors.Hand;
             btnAdicionar.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAdicionar.ForeColor = SystemColors.ActiveCaptionText;
             btnAdicionar.Location = new Point(61, 176);
@@ -85,6 +86,7 @@
             // btnConsutar
             // 
             btnConsutar.BackColor = Color.DarkGray;
+            btnConsutar.Cursor = Cursors.Hand;
             btnConsutar.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnConsutar.ForeColor = SystemColors.ActiveCaptionText;
             btnConsutar.Location = new Point(274, 176);
