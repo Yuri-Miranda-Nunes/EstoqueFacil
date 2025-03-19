@@ -72,7 +72,7 @@
             // btnAdicionar
             // 
             btnAdicionar.BackColor = Color.FromArgb(0, 200, 83);
-            btnAdicionar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAdicionar.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAdicionar.ForeColor = SystemColors.ActiveCaptionText;
             btnAdicionar.Location = new Point(61, 176);
             btnAdicionar.Name = "btnAdicionar";
@@ -85,7 +85,7 @@
             // btnConsutar
             // 
             btnConsutar.BackColor = Color.DarkGray;
-            btnConsutar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConsutar.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnConsutar.ForeColor = SystemColors.ActiveCaptionText;
             btnConsutar.Location = new Point(274, 176);
             btnConsutar.Name = "btnConsutar";
@@ -98,7 +98,7 @@
             // btnConfiguracao
             // 
             btnConfiguracao.BackColor = Color.DarkGray;
-            btnConfiguracao.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConfiguracao.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnConfiguracao.Location = new Point(493, 176);
             btnConfiguracao.Name = "btnConfiguracao";
             btnConfiguracao.Size = new Size(170, 61);
@@ -110,7 +110,7 @@
             // btnSair
             // 
             btnSair.BackColor = Color.OrangeRed;
-            btnSair.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSair.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSair.Location = new Point(644, 284);
             btnSair.Name = "btnSair";
             btnSair.Size = new Size(86, 40);
