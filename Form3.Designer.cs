@@ -32,9 +32,9 @@
             label1 = new Label();
             dataGridView1 = new DataGridView();
             setaVoltar = new Label();
-            label3 = new Label();
+            btnExcluir = new Label();
             label4 = new Label();
-            label5 = new Label();
+            btnEditar = new Label();
             label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -68,16 +68,17 @@
             setaVoltar.TabIndex = 4;
             setaVoltar.Click += setaVoltar_Click;
             // 
-            // label3
+            // btnExcluir
             // 
-            label3.AutoSize = true;
-            label3.Image = Properties.Resources.delete;
-            label3.Location = new Point(478, 319);
-            label3.Name = "label3";
-            label3.Padding = new Padding(15, 10, 15, 10);
-            label3.Size = new Size(30, 35);
-            label3.TabIndex = 5;
-            label3.Tag = "";
+            btnExcluir.AutoSize = true;
+            btnExcluir.Image = Properties.Resources.delete;
+            btnExcluir.Location = new Point(478, 319);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.Padding = new Padding(15, 10, 15, 10);
+            btnExcluir.Size = new Size(30, 35);
+            btnExcluir.TabIndex = 5;
+            btnExcluir.Tag = "";
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // label4
             // 
@@ -90,15 +91,16 @@
             label4.TabIndex = 6;
             label4.Text = "Excluir";
             // 
-            // label5
+            // btnEditar
             // 
-            label5.AutoSize = true;
-            label5.Image = Properties.Resources.edit_pequeno;
-            label5.Location = new Point(205, 319);
-            label5.Name = "label5";
-            label5.Padding = new Padding(15, 10, 15, 10);
-            label5.Size = new Size(30, 35);
-            label5.TabIndex = 7;
+            btnEditar.AutoSize = true;
+            btnEditar.Image = Properties.Resources.edit_pequeno;
+            btnEditar.Location = new Point(205, 319);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Padding = new Padding(15, 10, 15, 10);
+            btnEditar.Size = new Size(30, 35);
+            btnEditar.TabIndex = 7;
+            btnEditar.Click += label5_Click;
             // 
             // label6
             // 
@@ -117,9 +119,9 @@
             BackColor = Color.FromArgb(0, 200, 83);
             ClientSize = new Size(742, 387);
             Controls.Add(label6);
-            Controls.Add(label5);
+            Controls.Add(btnEditar);
             Controls.Add(label4);
-            Controls.Add(label3);
+            Controls.Add(btnExcluir);
             Controls.Add(setaVoltar);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
@@ -137,9 +139,9 @@
         private Label label1;
         private DataGridView dataGridView1;
         private Label setaVoltar;
-        private Label label3;
+        private Label btnExcluir;
         private Label label4;
-        private Label label5;
+        private Label btnEditar;
         private Label label6;
     }
 }

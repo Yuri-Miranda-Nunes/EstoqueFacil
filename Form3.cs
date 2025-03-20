@@ -11,7 +11,7 @@ using MySql.Data.MySqlClient;
 
 namespace Leitura_de_solicitação_de_cliente
 {
-    
+
     public partial class ConsultaEstoque : Form
     {
         public ConsultaEstoque()
@@ -37,7 +37,7 @@ namespace Leitura_de_solicitação_de_cliente
         }
         private void setaVoltar_MouseEnter(object sender, EventArgs e)
         {
-           
+
         }
         private void carregarDados()
         {
@@ -70,10 +70,69 @@ namespace Leitura_de_solicitação_de_cliente
         }
 
 
-            
+
         private void setaVoltar_MouseLeave(object sender, EventArgs e)
         {
-          
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Hide();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Obter o Id do registro selecionado
+                int idParaExcluir = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value); // Substitua "Id" pelo nome correto da coluna
+
+                // String de conexão com o banco de dados
+                string connStr = "Server=Localhost;Database=estoquefacil;User ID=root;password=;";
+
+                // Comando SQL para exclusão
+                string query = "DELETE FROM produtos WHERE Id = @Id";
+
+                try
+                {
+                    using (MySqlConnection conn = new MySqlConnection(connStr))
+                    {
+                        conn.Open();
+
+                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                        {
+                            // Definir o valor do parâmetro @Id
+                            cmd.Parameters.AddWithValue("@Id", idParaExcluir);
+
+                            // Executar o comando DELETE
+                            int linhasAfetadas = cmd.ExecuteNonQuery();
+
+                            // Verificar se a exclusão foi bem-sucedida
+                            if (linhasAfetadas > 0)
+                            {
+                                MessageBox.Show("Registro excluído com sucesso!");
+                                // Atualizar o DataGridView após a exclusão
+                                carregarDados();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Registro não encontrado.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecione um registro para excluir.");
+            }
         }
     }
 }

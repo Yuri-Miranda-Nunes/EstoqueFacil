@@ -32,6 +32,7 @@
             button1 = new Button();
             button2 = new Button();
             label2 = new Label();
+            btnVoltar = new Label();
             SuspendLayout();
             // 
             // label1
@@ -83,12 +84,22 @@
             label2.TextAlign = ContentAlignment.TopCenter;
             label2.Click += label2_Click_1;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Image = Properties.Resources.Seta_pequena_esquerda_branca;
+            btnVoltar.Location = new Point(-1, 9);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(76, 52);
+            btnVoltar.TabIndex = 10;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 200, 83);
             ClientSize = new Size(742, 387);
+            Controls.Add(btnVoltar);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -105,5 +116,6 @@
         private Button button1;
         private Button button2;
         private Label label2;
+        private Label btnVoltar;
     }
 }

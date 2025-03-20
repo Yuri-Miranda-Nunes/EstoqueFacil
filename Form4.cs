@@ -41,5 +41,12 @@ namespace Leitura_de_solicitação_de_cliente
         {
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            ConsultaEstoque form3 = new ConsultaEstoque();
+            form3.Show();
+            this.Hide();
+        }
     }
 }
