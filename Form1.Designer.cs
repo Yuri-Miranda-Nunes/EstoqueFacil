@@ -100,6 +100,7 @@
             // btnConfiguracao
             // 
             btnConfiguracao.BackColor = Color.DarkGray;
+            btnConfiguracao.Cursor = Cursors.Hand;
             btnConfiguracao.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnConfiguracao.Location = new Point(493, 176);
             btnConfiguracao.Name = "btnConfiguracao";
@@ -112,6 +113,7 @@
             // btnSair
             // 
             btnSair.BackColor = Color.OrangeRed;
+            btnSair.Cursor = Cursors.Hand;
             btnSair.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSair.Location = new Point(644, 284);
             btnSair.Name = "btnSair";
@@ -186,6 +188,7 @@
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.DarkGray;
+            label8.Cursor = Cursors.Hand;
             label8.Font = new Font("Swis721 Blk BT", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Green;
             label8.Location = new Point(103, 88);
@@ -198,6 +201,7 @@
             // 
             label9.AutoSize = true;
             label9.BackColor = Color.DarkGray;
+            label9.Cursor = Cursors.Hand;
             label9.Font = new Font("Swis721 Blk BT", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Green;
             label9.Location = new Point(274, 88);
@@ -210,6 +214,7 @@
             // 
             label10.AutoSize = true;
             label10.BackColor = Color.DarkGray;
+            label10.Cursor = Cursors.Hand;
             label10.Font = new Font("Swis721 Blk BT", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Green;
             label10.Location = new Point(534, 90);
