@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace Leitura_de_solicitação_de_cliente
 
     public partial class ConsultaEstoque : Form
     {
+
         public ConsultaEstoque()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace Leitura_de_solicitação_de_cliente
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -78,9 +80,8 @@ namespace Leitura_de_solicitação_de_cliente
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-            form4.Show();
-            this.Hide();
+
+            MessageBox.Show("Em manuntenção ");
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)

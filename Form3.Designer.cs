@@ -143,5 +143,6 @@
         private Label label4;
         private Label btnEditar;
         private Label label6;
+
     }
 }
